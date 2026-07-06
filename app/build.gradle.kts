@@ -7,7 +7,6 @@ plugins {
 
 android {
 	namespace = "org.jellyfin.androidtv"
-	applicationId = "com.walhalla.atv"
 	compileSdk = libs.versions.android.compileSdk.get().toInt()
 
 	defaultConfig {
