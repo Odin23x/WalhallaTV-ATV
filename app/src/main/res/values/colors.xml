@@ -66,3 +66,10 @@
 
     <color name="background_filter">#94101010</color>
 </resources>
+
+    <!-- Walhalla Brand Colors -->
+    <color name="walhalla_gold">#c8922a</color>
+    <color name="walhalla_bright">#f0c060</color>
+    <color name="walhalla_dark">#0a0705</color>
+    <color name="walhalla_darker">#0d0a06</color>
+    <color name="walhalla_red">#8b1a1a</color>

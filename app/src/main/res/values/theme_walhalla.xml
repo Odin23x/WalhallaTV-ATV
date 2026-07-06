@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Jellyfin" parent="@style/Theme.AppCompat.Leanback">
+        <item name="android:colorPrimary">@color/walhalla_darker</item>
+        <item name="android:colorPrimaryDark">@color/walhalla_dark</item>
+        <item name="android:colorAccent">@color/walhalla_gold</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="defaultBackground">@color/walhalla_dark</item>
+        <item name="cardImageBackground">@color/walhalla_darker</item>
+        <item name="cardViewBackground">@android:color/transparent</item>
+        <item name="defaultSearchColor">@color/walhalla_gold</item>
+        <item name="android:colorButtonNormal">@color/walhalla_darker</item>
+        <item name="buttonDefaultNormalBackground">@color/button_default_normal_background</item>
+        <item name="buttonDefaultHighlightBackground">@color/walhalla_gold</item>
+        <item name="inputDefaultStrokeWidth">2dp</item>
+        <item name="inputDefaultStrokeColor">@color/walhalla_gold</item>
+        <item name="inputDefaultHighlightBackground">@color/walhalla_bright</item>
+        <item name="popupMenuBackground">@color/walhalla_darker</item>
+        <item name="headerTextColor">@color/walhalla_bright</item>
+        <item name="progressBackground">@color/grey_transparent</item>
+        <item name="progressPrimary">@color/walhalla_gold</item>
+        <item name="progressSecondary">@color/walhalla_red</item>
+        <item name="android:datePickerStyle">@style/DatePickerCustom</item>
+        <item name="rowHeaderStyle">@style/Widget.Jellyfin.Row.Header</item>
+        <item name="browseTitleViewLayout">@layout/view_lb_browse_title</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:popupWindowStyle">@style/PopupWindow</item>
+        <item name="cardRounding">4dp</item>
+        <item name="buttonRounding">3dp</item>
+        <item name="inputRounding">3dp</item>
+        <item name="popupMenuRounding">3dp</item>
+        <item name="overlayDimDimmedLevel">30%</item>
+        <item name="controlIconBackground">@color/walhalla_darker</item>
+        <item name="controlIconForegroundActive">@color/walhalla_gold</item>
+        <item name="controlIconForegroundInactive">@color/button_default_highlight_background</item>
+        <item name="qrBackground">@color/white</item>
+        <item name="qrForeground">@color/black</item>
+        <item name="tile_port_person_bg">@color/walhalla_darker</item>
+        <item name="tile_port_video_bg">@color/walhalla_darker</item>
+        <item name="tile_land_folder_bg">@color/walhalla_darker</item>
+        <item name="tile_chapter_bg">@color/walhalla_darker</item>
+        <item name="tile_land_tv_bg">@color/walhalla_darker</item>
+        <item name="tile_port_tv_bg">@color/walhalla_darker</item>
+        <item name="tile_actors_bg">@color/walhalla_darker</item>
+        <item name="tile_land_photo_bg">@color/walhalla_darker</item>
+        <item name="tile_port_folder_bg">@color/walhalla_darker</item>
+        <item name="tile_land_series_timer_bg">@color/walhalla_darker</item>
+        <item name="tile_audio_bg">@color/walhalla_dark</item>
+        <item name="tile_artists_bg">@color/walhalla_darker</item>
+        <item name="tile_genres_bg">@color/walhalla_dark</item>
+        <item name="tile_search_bg">@color/walhalla_darker</item>
+        <item name="tile_suggestions_bg">@color/walhalla_darker</item>
+        <item name="tile_port_grid_bg">@color/walhalla_dark</item>
+        <item name="tile_letters_bg">@color/walhalla_darker</item>
+        <item name="tile_port_guide_bg">@color/walhalla_darker</item>
+        <item name="tile_port_series_timer_bg">@color/walhalla_dark</item>
+        <item name="tile_port_time_bg">@color/walhalla_darker</item>
+        <item name="android:dialogTheme">@style/Theme.Jellyfin.Dialog</item>
+    </style>
+
+    <style name="Theme.Jellyfin.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>
