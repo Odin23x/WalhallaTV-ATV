@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.focusRestorer
@@ -27,11 +28,9 @@ import org.jellyfin.androidtv.ui.base.Text
 import org.jellyfin.androidtv.ui.composable.modifier.overscan
 import org.jellyfin.androidtv.ui.composable.rememberCurrentTime
 
-private val WalhallaFraktur
-	@Composable get() = FontFamily(Font(R.font.unifraktur_maguntia))
-
 @Composable
 fun Logo(modifier: Modifier = Modifier) {
+	val walhallaFraktur = remember { FontFamily(Font(R.font.unifraktur_maguntia)) }
 	Row(
 		modifier = modifier,
 		verticalAlignment = Alignment.CenterVertically,
@@ -45,7 +44,7 @@ fun Logo(modifier: Modifier = Modifier) {
 			text = "Walhalla.TV",
 			color = Color(0xFFF0C060),
 			fontSize = 28.sp,
-			fontFamily = WalhallaFraktur,
+			fontFamily = walhallaFraktur,
 			modifier = Modifier.padding(start = 12.dp),
 		)
 	}
