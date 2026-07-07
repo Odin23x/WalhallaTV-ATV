@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.offset
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -52,7 +53,7 @@ fun SplashScreen() {
 					fontSize = 72.sp,
 					fontFamily = FontFamily(Font(R.font.unifraktur_maguntia)),
 					textAlign = TextAlign.Center,
-					modifier = Modifier.padding(start = x, top = y),
+					modifier = Modifier.offset(x = x, y = y),
 				)
 			}
 			Text(
