@@ -84,6 +84,18 @@ android {
 
 			buildConfigField("boolean", "DEVELOPMENT", (defaultConfig.versionCode!! < 100).toString())
 		}
+
+		create("perf") {
+			// Performance-Testbuild: R8/Shrink wie Release, aber mit Debug-Signing (kein Keystore nötig)
+			initWith(getByName("debug"))
+			isDebuggable = false
+			isMinifyEnabled = true
+			isShrinkResources = true
+			proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+			matchingFallbacks += listOf("debug")
+			applicationIdSuffix = ".debug"
+			signingConfig = signingConfigs.getByName("debug")
+		}
 	}
 
 	lint {
