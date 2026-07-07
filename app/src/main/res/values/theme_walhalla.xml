@@ -5,7 +5,7 @@
         <item name="android:colorPrimaryDark">@color/walhalla_dark</item>
         <item name="android:colorAccent">@color/walhalla_gold</item>
         <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="defaultBackground">@color/walhalla_dark</item>
+        <item name="defaultBackground">@drawable/splash_banner</item>
         <item name="cardImageBackground">@color/walhalla_darker</item>
         <item name="cardViewBackground">@android:color/transparent</item>
         <item name="defaultSearchColor">@color/walhalla_gold</item>
