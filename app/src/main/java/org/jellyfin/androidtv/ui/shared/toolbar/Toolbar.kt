@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -15,6 +17,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.SubcomposeLayout
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jellyfin.androidtv.R
@@ -23,13 +27,28 @@ import org.jellyfin.androidtv.ui.base.Text
 import org.jellyfin.androidtv.ui.composable.modifier.overscan
 import org.jellyfin.androidtv.ui.composable.rememberCurrentTime
 
+private val WalhallaFraktur
+	@Composable get() = FontFamily(Font(R.font.unifraktur_maguntia))
+
 @Composable
 fun Logo(modifier: Modifier = Modifier) {
-	Image(
-		painter = painterResource(R.drawable.app_logo),
-		contentDescription = stringResource(R.string.app_name),
+	Row(
 		modifier = modifier,
-	)
+		verticalAlignment = Alignment.CenterVertically,
+	) {
+		Image(
+			painter = painterResource(R.drawable.app_logo),
+			contentDescription = stringResource(R.string.app_name),
+			modifier = Modifier.size(64.dp),
+		)
+		Text(
+			text = "Walhalla.TV",
+			color = Color(0xFFF0C060),
+			fontSize = 28.sp,
+			fontFamily = WalhallaFraktur,
+			modifier = Modifier.padding(start = 12.dp),
+		)
+	}
 }
 
 @Composable
