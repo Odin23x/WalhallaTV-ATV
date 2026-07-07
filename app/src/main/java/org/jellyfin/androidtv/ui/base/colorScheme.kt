@@ -3,39 +3,46 @@ package org.jellyfin.androidtv.ui.base
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
-import org.jellyfin.design.Tokens
+
+// Walhalla Brand Colors
+private val WalhallaDark = Color(0xFF0A0705)
+private val WalhallaDarker = Color(0xFF0D0A06)
+private val WalhallaGold = Color(0xFFC8922A)
+private val WalhallaBright = Color(0xFFF0C060)
+private val WalhallaCream = Color(0xFFE8D8B8)
+private val WalhallaRed = Color(0xFF8B1A1A)
 
 fun colorScheme(): ColorScheme = ColorScheme(
-	background = Tokens.Color.colorGrey975,
-	onBackground = Tokens.Color.colorBluegrey25,
-	button = Color(0xB3747474),
-	onButton = Color(0xFFDDDDDD),
-	buttonFocused = Color(0xE6CCCCCC),
-	onButtonFocused = Color(0xFF444444),
-	buttonDisabled = Color(0x33747474),
+	background = WalhallaDark,
+	onBackground = WalhallaCream,
+	button = Color(0xB30D0A06),
+	onButton = WalhallaCream,
+	buttonFocused = WalhallaGold,
+	onButtonFocused = WalhallaDarker,
+	buttonDisabled = Color(0x330D0A06),
 	onButtonDisabled = Color(0xFF686868),
-	buttonActive = Color(0x4DCCCCCC),
-	onButtonActive = Color(0xFFDDDDDD),
-	input = Color(0xB3747474),
-	onInput = Color(0xE6CCCCCC),
-	inputFocused = Color(0xE6CCCCCC),
-	onInputFocused = Color(0xFFDDDDDD),
-	rangeControlBackground = Tokens.Color.colorBluegrey700,
-	rangeControlFill = Tokens.Color.colorCyan500,
-	rangeControlKnob = Tokens.Color.colorBluegrey100,
-	seekbarBuffer = Tokens.Color.colorBluegrey300,
-	recording = Tokens.Color.colorRed300,
-	onRecording = Tokens.Color.colorRed25,
-	badge = Tokens.Color.colorCyan500,
-	onBadge = Tokens.Color.colorBluegrey100,
-	listHeader = Tokens.Color.colorGrey50,
-	listOverline = Tokens.Color.colorGrey500,
-	listHeadline = Tokens.Color.colorGrey25,
-	listCaption = Tokens.Color.colorGrey200,
+	buttonActive = Color(0x4DC8922A),
+	onButtonActive = WalhallaBright,
+	input = Color(0xB30D0A06),
+	onInput = WalhallaCream,
+	inputFocused = WalhallaGold,
+	onInputFocused = WalhallaDarker,
+	rangeControlBackground = Color(0xFF3A2A12),
+	rangeControlFill = WalhallaGold,
+	rangeControlKnob = WalhallaBright,
+	seekbarBuffer = Color(0xFF5A4A22),
+	recording = WalhallaRed,
+	onRecording = WalhallaCream,
+	badge = WalhallaGold,
+	onBadge = WalhallaDarker,
+	listHeader = WalhallaBright,
+	listOverline = WalhallaGold,
+	listHeadline = WalhallaBright,
+	listCaption = WalhallaCream,
 	listButton = Color.Transparent,
-	listButtonFocused = Tokens.Color.colorBluegrey800,
-	surface = Tokens.Color.colorBluegrey900,
-	scrim = Tokens.Color.colorBlack.copy(alpha = 0.67f),
+	listButtonFocused = Color(0xFF2A1F10),
+	surface = WalhallaDarker,
+	scrim = Color.Black.copy(alpha = 0.67f),
 )
 
 @Immutable
