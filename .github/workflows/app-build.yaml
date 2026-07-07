@@ -26,6 +26,8 @@ jobs:
         uses: gradle/actions/setup-gradle@3f131e8634966bd73d06cc69884922b02e6faf92 # v6.2.0
       - name: Assemble debug APKs
         run: ./gradlew assembleDebug
+      - name: Assemble perf APKs (R8-optimiert, Debug-signiert)
+        run: ./gradlew assemblePerf
       - name: Create publish bundle
         run: mkdir -p build/gh-app-publish/; find app/build/ -iname "*.apk" -exec mv "{}" build/gh-app-publish/ \;
       - name: Upload artifacts
