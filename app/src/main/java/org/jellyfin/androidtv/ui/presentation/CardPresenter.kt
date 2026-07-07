@@ -5,6 +5,7 @@ import android.widget.ImageView
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.basicMarquee
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -368,6 +369,10 @@ private fun CardViewHolderContent(
 			},
 			modifier = Modifier
 				.size(size)
+				.then(
+					if (focused) Modifier.border(3.dp, JellyfinTheme.colorScheme.buttonFocused, JellyfinTheme.shapes.medium)
+					else Modifier
+				)
 		)
 	}
 
